@@ -1,0 +1,28 @@
+# Logs
+*.log
+
+# macOS system files
+.DS_Store
+
+# Node modules (if you later use npm, like for a slideshow library)
+node_modules/
+
+# Build or temp files (if you add any later)
+dist/
+build/
+.temp/
+*.tmp
+
+# IDE/editor config files
+.vscode/
+*.sublime-workspace
+*.sublime-project
+.idea/
+
+# OS trash files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Env files (if you use anything like Formspree or Netlify functions later)
+.env
