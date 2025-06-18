@@ -3350,3 +3350,25 @@ html {
   background-color: #ff5c5c;
 }
 
+/* Mobile Menu Styling - Gold Theme */
+body.is-menu-visible #menu {
+  background-color: #1a1a1a; /* Dark background */
+  color: #ffd700; /* Gold text */
+}
+
+#menu a {
+  color: #ffd700; /* Gold links */
+  text-decoration: none;
+}
+
+#menu a:hover {
+  color: #ffffff; /* White on hover */
+}
+
+#menu .close {
+  color: #ffd700;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+
