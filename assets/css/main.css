@@ -3371,4 +3371,38 @@ body.is-menu-visible #menu {
   font-size: 1.2em;
 }
 
+/* Hide hamburger toggle link by default */
+a[href="#menu"] {
+  display: none;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1000;
+  font-size: 2rem;
+  color: #ffd700; /* Gold */
+  cursor: pointer;
+}
+
+/* Show hamburger toggle on mobile only */
+@media screen and (max-width: 980px) {
+  a[href="#menu"] {
+    display: block;
+  }
+}
+
+/* Hide desktop nav on mobile */
+@media screen and (max-width: 980px) {
+  header nav {
+    display: none;
+  }
+}
+
+/* Show desktop nav on desktop */
+@media screen and (min-width: 981px) {
+  header nav {
+    display: block;
+  }
+}
+
+
 
