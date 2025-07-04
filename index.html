@@ -7,15 +7,36 @@
   <link rel="stylesheet" href="assets/css/main.css" />
   <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HJEZNXX0GZ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Inline Gallery CSS -->
+  <style>
+    .slider {
+      position: relative;
+      max-width: 600px;
+      margin: 20px auto;
+    }
+    .slide {
+      display: none;
+      width: 100%;
+    }
+    .slide.active {
+      display: block;
+    }
+    #prev, #next {
+      margin: 5px;
+      padding: 8px 16px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+  </style>
 
-  gtag('config', 'G-HJEZNXX0GZ');
-</script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HJEZNXX0GZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-HJEZNXX0GZ');
+  </script>
 </head>
 <body class="is-preload">
 
@@ -35,6 +56,8 @@
             <li><a href="#vision">Vision</a></li>
             <li><a href="#mission">Mission</a></li>
             <li><a href="#values">Values</a></li>
+            <li><a href="#events">Upcoming Events</a></li>
+            <li><a href="#gallery">Gallery</a></li>
             <li><a href="#footer">Contact</a></li>
           </ul>
         </nav>
@@ -56,58 +79,99 @@
         <!-- About Us Section -->
         <section id="about">
           <h2>About Us</h2>
-          <p>The South African Gospel Recognition Awards (SAGRA), established in
-2021, is a proudly faith-driven initiative committed to honoring and
-uplifting those who dedicate their voices and talents to spreading the
-Gospel through music. Founded on the principle of speaking for those
-whose contributions often go unrecognized, SAGRA shines a spotlight on
-gospel artists working tirelessly behind the microphone, inspiring
-hope, healing, and transformation through their art. We are more than
-just an awards platform; we are a movement that seeks to develop,
-mentor, and empower the next generation of gospel musicians across
-South Africa. Through strategic recognition and community engagement,
-we aim to build a sustainable legacy that supports both established
-and emerging talents in their spiritual and musical journeys.</p>
+          <p>The South African Gospel Recognition Awards (SAGRA), established in 2021, is a proudly faith-driven initiative committed to honoring and uplifting those who dedicate their voices and talents to spreading the Gospel through music. Founded on the principle of speaking for those whose contributions often go unrecognized, SAGRA shines a spotlight on gospel artists working tirelessly behind the microphone, inspiring hope, healing, and transformation through their art. We are more than just an awards platform; we are a movement that seeks to develop, mentor, and empower the next generation of gospel musicians across South Africa. Through strategic recognition and community engagement, we aim to build a sustainable legacy that supports both established and emerging talents in their spiritual and musical journeys.</p>
         </section>
 
         <!-- Vision Section -->
         <section id="vision">
           <h2>Our Vision</h2>
-          <p>To become Africa's leading gospel recognition platform - empowering
-generations, transforming communities, and shaping the future of
-gospel music by celebrating unsung voices and cultivating young,
-purpose-driven talent through excellence and innovation.</p>
+          <p>To become Africa's leading gospel recognition platform - empowering generations, transforming communities, and shaping the future of gospel music by celebrating unsung voices and cultivating young, purpose-driven talent through excellence and innovation.</p>
         </section>
 
         <!-- Mission Section -->
         <section id="mission">
           <h2>Our Mission</h2>
-          <p>Our mission is to advocate for the acknowledgment and celebration of
-artists, especially those who work behind the scenes, while nurturing
-the growth and development of aspiring young musicians. We are
-committed to creating opportunities, fostering faith-based artistry,
-and building a culture of recognition that honors both spiritual
-impact and musical excellence.</p>
+          <p>Our mission is to advocate for the acknowledgment and celebration of artists, especially those who work behind the scenes, while nurturing the growth and development of aspiring young musicians. We are committed to creating opportunities, fostering faith-based artistry, and building a culture of recognition that honors both spiritual impact and musical excellence.</p>
         </section>
 
         <!-- Core Values Section -->
         <section id="values">
           <h2>Our Core Values</h2>
           <ul>
-            <li><strong>Accountability:</strong> We uphold integrity and transparency in all our actions, ensuring we
-are responsible stewards of the platform and the people we serve.</li>
-            <li><strong>Innovation:</strong> We embrace creative approaches and forward-thinking strategies that
-elevate gospel music and make recognition more meaningful and
-impactful.</li>
-            <li><strong>Loyalty:</strong> We remain dedicated to our purpose, our artists, and the gospel
-community—building strong relationships grounded in trust and shared
-faith.</li>
-            <li><strong>Respect:</strong> We honor the unique contributions of every individual, treating all
-artists, partners, and communities with dignity and compassion.</li>
-            <li><strong>Excellence:</strong> We strive for the highest standards in everything we do, from
-organizing events to mentoring youth, reflecting the divine
-inspiration that drives our mission.</li>
+            <li><strong>Accountability:</strong> We uphold integrity and transparency in all our actions, ensuring we are responsible stewards of the platform and the people we serve.</li>
+            <li><strong>Innovation:</strong> We embrace creative approaches and forward-thinking strategies that elevate gospel music and make recognition more meaningful and impactful.</li>
+            <li><strong>Loyalty:</strong> We remain dedicated to our purpose, our artists, and the gospel community—building strong relationships grounded in trust and shared faith.</li>
+            <li><strong>Respect:</strong> We honor the unique contributions of every individual, treating all artists, partners, and communities with dignity and compassion.</li>
+            <li><strong>Excellence:</strong> We strive for the highest standards in everything we do, from organizing events to mentoring youth, reflecting the divine inspiration that drives our mission.</li>
           </ul>
+        </section>
+
+        <!-- Upcoming Events Section -->
+        <section id="events">
+          <h2>Upcoming Events</h2>
+          <p>Join us for our next celebration of gospel music recognition awards 2025!</p>
+          <p>
+            <a href="https://tinyurl.com/sagraawards2025" target="_blank">Click here to nominate your favorite gospel artist for this year's awards.</a>
+          </p>
+          <img src="images/event-qr.svg" alt="Event QR Code" style="max-width:200px;" />
+          <p>Scan the QR code above to access the nomination form on your mobile device.</p>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery">
+          <h2>Gallery</h2>
+          <div class="slider">
+            <img src="images/gallery1.jpeg" class="slide active" alt="Event Photo 1">
+            <img src="images/gallery2.jpeg" class="slide" alt="Event Photo 2">
+            <img src="images/gallery3.jpeg" class="slide" alt="Event Photo 3">
+            <img src="images/gallery4.jpeg" class="slide" alt="Event Photo ">
+            <img src="images/gallery5.jpeg" class="slide" alt="Event Photo 5">
+            <img src="images/gallery6.jpeg" class="slide" alt="Event Photo 6">
+            <img src="images/gallery7.jpeg" class="slide" alt="Event Photo 7">
+            <img src="images/gallery8.jpeg" class="slide" alt="Event Photo 8">
+            <img src="images/gallery9.jpeg" class="slide" alt="Event Photo 9">
+            <img src="images/gallery10.jpeg" class="slide" alt="Event Photo 10">
+            <img src="images/gallery11.jpeg" class="slide" alt="Event Photo 11">
+            <img src="images/gallery12.jpeg" class="slide" alt="Event Photo 12">
+            <img src="images/gallery13.jpeg" class="slide" alt="Event Photo 13">
+            <img src="images/gallery14.jpeg" class="slide" alt="Event Photo 14">
+            <img src="images/gallery15.jpeg" class="slide" alt="Event Photo 15">
+            <img src="images/gallery16.jpeg" class="slide" alt="Event Photo 16">
+            <img src="images/gallery17.jpeg" class="slide" alt="Event Photo 17">
+            <img src="images/gallery18.jpeg" class="slide" alt="Event Photo 18">
+            <img src="images/gallery19.jpeg" class="slide" alt="Event Photo 19">
+            <img src="images/gallery20.jpeg" class="slide" alt="Event Photo 20">
+            <img src="images/gallery21.jpeg" class="slide" alt="Event Photo 21">
+            <img src="images/gallery22.jpeg" class="slide" alt="Event Photo 22">
+            <img src="images/gallery23.jpeg" class="slide" alt="Event Photo 23">
+            <img src="images/gallery24.jpeg" class="slide" alt="Event Photo 24">
+            <img src="images/gallery25.jpeg" class="slide" alt="Event Photo 25">
+            <img src="images/gallery26.jpeg" class="slide" alt="Event Photo 26">
+            <img src="images/gallery27.jpeg" class="slide" alt="Event Photo 27">
+            <img src="images/gallery28.jpeg" class="slide" alt="Event Photo 28">
+            <img src="images/gallery29.jpeg" class="slide" alt="Event Photo 29">
+            <img src="images/gallery30.jpeg" class="slide" alt="Event Photo 30">
+            <img src="images/gallery31.jpeg" class="slide" alt="Event Photo 31">
+            <img src="images/gallery32.jpeg" class="slide" alt="Event Photo 32">
+            <img src="images/gallery33.jpeg" class="slide" alt="Event Photo 33">
+            <img src="images/gallery34.jpeg" class="slide" alt="Event Photo 34">
+            <img src="images/gallery35.jpeg" class="slide" alt="Event Photo 35">
+            <img src="images/gallery36.jpeg" class="slide" alt="Event Photo 36">
+            <img src="images/gallery37.jpeg" class="slide" alt="Event Photo 37">
+            <img src="images/gallery38.jpeg" class="slide" alt="Event Photo 38">
+            <img src="images/gallery39.jpeg" class="slide" alt="Event Photo 39">
+            <img src="images/gallery40.jpeg" class="slide" alt="Event Photo 40">
+            <img src="images/gallery41.jpeg" class="slide" alt="Event Photo 41">
+            <img src="images/gallery42.jpeg" class="slide" alt="Event Photo 42">
+            <img src="images/gallery43.jpeg" class="slide" alt="Event Photo 43">
+            <img src="images/gallery44.jpeg" class="slide" alt="Event Photo 44">
+            <img src="images/gallery45.jpeg" class="slide" alt="Event Photo 45">
+            <img src="images/gallery46.jpeg" class="slide" alt="Event Photo 46">
+            <img src="images/gallery47.jpeg" class="slide" alt="Event Photo 47">
+            <img src="images/gallery48.jpeg" class="slide" alt="Event Photo 48">
+          </div>
+          <button id="prev">Prev</button>
+          <button id="next">Next</button>
         </section>
 
       </div>
@@ -120,22 +184,22 @@ inspiration that drives our mission.</li>
         <section>
           <h2>Contact Us</h2>
           <p>
-			Email: <a href="mailto:sagraawards@gmail.com">sagraawards@gmail.com</a><br />
-			Phone: <a href="tel:+27826811890">+27 82 681 1890</a><br />
-		  </p>
+            Email: <a href="mailto:sagraawards@gmail.com">sagraawards@gmail.com</a><br />
+            Phone: <a href="tel:+27826811890">+27 82 681 1890</a><br />
+          </p>
         </section>
 
         <section>
           <h2>Follow Us</h2>
           <ul class="icons">
             <li><a href="https://www.facebook.com/share/1BjTUds4AV/" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
-            <li><a href="https://wa.me/27736748213" class="icon brands style2 fa-whatsapp"><span class="label">WhatsApp</span></a></
+            <li><a href="https://wa.me/27736748213" class="icon brands style2 fa-whatsapp"><span class="label">WhatsApp</span></a></li>
           </ul>
         </section>
 
         <ul class="copyright" style="list-style: none; padding: 0; margin: 0; text-align: center;">
           <li>&copy; 2025 SAGRA. All rights reserved.</li>
-		  <li>Website by <a href="https://www.linkedin.com/in/inathi-tunzana-173ba356/" target="_blank">Inathi Tunzana</a></li>
+          <li>Website by <a href="https://www.linkedin.com/in/inathi-tunzana-173ba356/" target="_blank">Inathi Tunzana</a></li>
         </ul>
 
       </div>
@@ -150,8 +214,26 @@ inspiration that drives our mission.</li>
   <script src="assets/js/util.js"></script>
   <script src="assets/js/main.js"></script>
 
+  <!-- Gallery Slider Script -->
+  <script>
+    const slides = document.querySelectorAll('.slide');
+    let currentSlide = 0;
+
+    document.getElementById('next').addEventListener('click', () => {
+      slides[currentSlide].classList.remove('active');
+      currentSlide = (currentSlide + 1) % slides.length;
+      slides[currentSlide].classList.add('active');
+    });
+
+    document.getElementById('prev').addEventListener('click', () => {
+      slides[currentSlide].classList.remove('active');
+      currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+      slides[currentSlide].classList.add('active');
+    });
+  </script>
+
   <!-- Back to Top Button -->
-<a href="#home" id="back-to-top" class="icon solid fa-arrow-up"></a>
+  <a href="#home" id="back-to-top" class="icon solid fa-arrow-up"></a>
 
 </body>
 </html>
